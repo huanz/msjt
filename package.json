@@ -1,0 +1,27 @@
+{
+  "name": "msjt",
+  "version": "1.0.0",
+  "description": "H5游戏煤屎军团",
+  "author": {
+    "name": "bukas",
+    "email": "yhz1219@gmail.com",
+    "url": "https://github.com/huanz"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "google-closure-compiler": "^20160713.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-filter": "^4.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-useref": "^3.1.0",
+    "imagemin-pngquant": "^5.0.0",
+    "plist": "^1.2.0"
+  },
+  "dependencies": {}
+}

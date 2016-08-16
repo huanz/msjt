@@ -1,0 +1,13 @@
+{
+    "name": "msjt",
+    "version": "1.0.0",
+    "homepage": "http://msjt.w3cboy.com",
+    "description": "a game named msjt created by cocos2d-html5",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:huanz/msjt.git"
+    },
+    "dependencies": {
+        "cocos2d-html5": "3.4.0"
+    }
+}

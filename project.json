@@ -1,0 +1,37 @@
+{
+    "project_type": "javascript",
+    "debugMode": 0,
+    "showFPS": false,
+    "frameRate": 30,
+    "id": "gameCanvas",
+    "renderMode": 0,
+    "engineDir": "bower_components/cocos2d-html5",
+    "modules": [
+        "transitions",
+        "shape-nodes",
+        "menus"
+    ],
+    "jsList": [
+        "src/utils/Utils.js",
+        "src/utils/pkgJsonLoader.js",
+        "src/Config.js",
+        "src/Resource.js",
+        "src/LoaderScene.js",
+        "src/BgSprite.js",
+        "src/StartScene.js",
+        "src/ShareLayer.js",
+        "src/AniScene.js",
+        "src/SingleModeScene.js",
+        "src/CoinLayer.js",
+        "src/SingleEndScene.js",
+        "src/AccountScene.js",
+        "src/PlayScene.js",
+        "src/GameSprite.js",
+        "src/PauseLayer.js",
+        "src/GameOverAnimate.js",
+        "src/RoleLayer.js",
+        "src/IntroScene.js",
+        "src/StartShowScene.js",
+        "src/HelpScene.js"
+    ]
+}

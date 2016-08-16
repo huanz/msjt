@@ -1,0 +1,175 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html,
+body,
+div,
+canvas,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+html input[type="button"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+body,
+canvas,
+div {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #333333;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    background-color: #000;
+    position: absolute;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #0088cc;
+    display: block;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%
+}
+
+ul {
+    list-style: none outside none;
+}
+
+input:-moz-placeholder {
+    color: #a6a6a6;
+}
+
+::-webkit-input-placeholder {
+    color: #a6a6a6;
+}
+
+input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    border: 0;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0);
+}
+
+input:focus {
+    outline: none;
+}
+
+#rank {
+    position: absolute;
+    left: 50%;
+}
+
+#rank ul {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#rank li {
+    display: block;
+    padding: 6% 0;
+    width: 100%;
+    color: #e5e5e5;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#rank li:nth-child(1),
+#rank li:nth-child(2),
+#rank li:nth-child(3) {
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+#rank li:nth-child(1) {
+    background-image: url("../res/r-first.png");
+}
+
+#rank li:nth-child(2) {
+    background-image: url("../res/r-second.png");
+}
+
+#rank li:nth-child(3) {
+    background-image: url("../res/r-third.png");
+}
+
+.counter,
+.avatar {
+    display: inline-block;
+    float: left;
+}
+
+#rank .counter {
+    color: #fff;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#rank .avatar {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#rank .score {
+    float: right;
+}
+
+.r-down span {
+    bottom: 0;
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    background: url("../res/scroll.png");
+    left: 50%;
+    margin-left: -15px;
+    z-index: 2;
+    -webkit-animation: down 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes down {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: -10px;
+    }
+}
