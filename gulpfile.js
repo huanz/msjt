@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     useref = require('gulp-useref'),
-    closureCompiler = require('google-closure-compiler').gulp(),
+    closureCompiler = require('google-closure-compiler-js').gulp(),
     filter = require('gulp-filter');
 
 var config = {
@@ -138,8 +138,8 @@ function getJsList() {
 gulp.task('js', function () {
     return gulp.src(getJsList())
         .pipe(closureCompiler({
-            compilation_level: 'ADVANCED',
-            js_output_file: 'game.js'
+            compilationLevel: 'ADVANCED',
+            jsOutputFile: 'game.js'
         }))
         .pipe(gulp.dest(config.dist + 'js'));
 });
